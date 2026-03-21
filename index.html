@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ATMERS AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ROTATE SCREEN MESSAGE -->
+    <div id="rotateMessage">
+        <div class="rotate-box">
+            📱 Please rotate your device<br>
+            <span>Landscape mode required</span>
+        </div>
+    </div>
+
+    <header>
+        <h1>🚦 ATMERS AI</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#tech">Tech</a>
+            <a href="#working">Working</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <h2>AI POWERED ADAPTIVE TRAFFIC MANAGEMENT AND EMERGENCY RESPONSE SYSTEM</h2>
+        <p>Real-time traffic optimization using YOLOv8, OpenCV & Arduino</p>
+        <p class="creator">
+            Designed & Developed by <span>Madan R</span>
+        </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about-container">
+
+            <div class="about-left">
+                <h2>🧠 About Project</h2>
+
+                <p>
+                    The <strong>AI Powered Adaptive Traffic Management System</strong> is designed
+                    to intelligently control traffic signals using real-time vehicle detection.
+                    It uses YOLOv8 for object detection and dynamically adjusts signal timing
+                    to reduce congestion and improve traffic flow efficiency.
+                </p>
+
+                <p>
+                    The system also integrates an <strong>RFID-based emergency detection module</strong>
+                    that identifies emergency vehicles such as ambulances and immediately
+                    provides signal clearance for faster response time.
+                </p>
+
+                <ul>
+                    <li>✔ Real-time multi-lane vehicle detection</li>
+                    <li>✔ AI-based traffic density calculation</li>
+                    <li>✔ Automatic signal timing optimization</li>
+                    <li>✔ Emergency vehicle priority system</li>
+                    <li>✔ Integrated Arduino hardware control</li>
+                    <li>✔ Live monitoring and alerts system</li>
+                </ul>
+            </div>
+
+            <div class="about-right">
+                <div class="about-box">
+                    <h3>🚦 System Highlights</h3>
+                    <p><strong>Accuracy:</strong> High precision detection using YOLOv8</p>
+                    <p><strong>Automation:</strong> Fully AI-controlled traffic signals</p>
+                    <p><strong>Response:</strong> Instant emergency clearance</p>
+                    <p><strong>Efficiency:</strong> Reduces waiting time & congestion</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+        <h2>🚀 Key Features</h2>
+        <div class="grid">
+            <div class="card" onclick="openFeature('detection')">📷 Real-time Vehicle Detection</div>
+
+            <div class="card" onclick="openFeature('ai')">🤖 AI-based Signal Control</div>
+
+            <div class="card" onclick="openFeature('emergency')">🚑 Emergency Priority</div>
+
+            <div class="card" onclick="openFeature('live')">📡 Live Monitoring</div>
+
+            <div class="card" onclick="openFeature('telegram')">📲 Telegram Control</div>
+
+            <div class="card" onclick="openFeature('alerts')">📩 Alerts System</div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGIES -->
+    <section id="tech">
+        <h2>⚙ Technologies Used</h2>
+        <div class="tech-container">
+            <div class="tech-card" onclick="openTech('yolo')">YOLOv8</div>
+            <div class="tech-card" onclick="openTech('opencv')">OpenCV</div>
+            <div class="tech-card" onclick="openTech('python')">Python</div>
+            <div class="tech-card" onclick="openTech('arduino')">Arduino Mega</div>
+            <div class="tech-card" onclick="openTech('rfid')">RFID Module</div>
+            <div class="tech-card" onclick="openTech('telegram')">Telegram Bot</div>
+        </div>
+    </section>
+
+    <!-- WORKING -->
+    <section id="working">
+        <h2>🔄 How It Works</h2>
+
+        <div class="work-container">
+
+            <div class="work-step">
+                <img src="assets/camera.jpg">
+                <div>
+                    <h3>1. Multi-Camera Traffic Capture</h3>
+                    <p>
+                        Four cameras continuously capture live traffic from each lane.
+                        Video feeds are processed in real-time using OpenCV.
+                    </p>
+                </div>
+            </div>
+
+            <div class="work-step">
+                <img src="assets/yolo.jpg">
+                <div>
+                    <h3>2. YOLOv8 Vehicle Detection & Tracking</h3>
+                    <p>
+                        YOLOv8 detects vehicles (cars, bikes, buses) and tracks them using unique IDs.
+                        Vehicles crossing counting lines are counted per lane.
+                    </p>
+                </div>
+            </div>
+
+            <div class="work-step">
+                <img src="assets/count.jpg">
+                <div>
+                    <h3>3. Traffic Density Calculation</h3>
+                    <p>
+                        Vehicle counts are collected for a fixed time window.
+                        AI calculates traffic density and determines priority lanes dynamically.
+                    </p>
+                </div>
+            </div>
+
+            <div class="work-step">
+                <img src="assets/control.jpg">
+                <div>
+                    <h3>4. AI Signal Timing Control</h3>
+                    <p>
+                        Green signal duration is assigned based on vehicle count.
+                        Commands are sent from Python to Arduino via Serial communication.
+                    </p>
+                </div>
+            </div>
+
+            <div class="work-step">
+
+                <!-- 🔥 MULTIPLE IMAGES -->
+                <div class="work-images">
+                    <img src="assets/arduino.jpg" alt="Arduino Mega">
+                    <img src="assets/rfid.jpg" alt="RFID Module">
+                    <img src="assets/servo.jpg" alt="Servo Motor">
+                    <img src="assets/traffic-led.jpg" alt="Traffic LEDs">
+                    <img src="assets/7segment.jpg" alt="7 Segment Display">
+                </div>
+
+                <!-- TEXT -->
+                <div class="work-content">
+                    <h3>6. Hardware Integration</h3>
+                    <p>
+                        The system integrates multiple hardware components to control real-time traffic signals.
+                        Arduino Mega acts as the central controller connecting all modules.
+                    </p>
+
+                    <ul>
+                        <li>🔧 Arduino Mega – Main controller</li>
+                        <li>⚙ Servo Motors – Lane barrier control</li>
+                        <li>🚦 Traffic LEDs – Signal indication</li>
+                        <li>🔢 4-digit 7 Segment – Timer display</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="work-step">
+                <img src="assets/rfid-emergency.jpg">
+                <div>
+                    <h3>6. RFID Emergency Detection</h3>
+                    <p>
+                        RFID modules detect emergency vehicles.
+                        System instantly overrides signals and gives priority clearance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="work-step">
+
+                <div class="alert-images">
+                    <img src="assets/email-alert.jpg">
+                    <img src="assets/whatsapp-alert.jpg">
+                    <img src="assets/emergency-email.jpg">
+                    <img src="assets/emergency-whatsapp.jpg">
+                </div>
+
+                <div>
+                    <h3>7. Alerts & Notifications</h3>
+                    <p>
+                        The system automatically sends real-time alerts for both traffic congestion and emergency
+                        situations.
+                        Notifications are delivered through Email and WhatsApp, ensuring instant communication to
+                        authorities.
+                    </p>
+
+                    <ul>
+                        <li>📧 Normal Traffic Email Alert</li>
+                        <li>📱 WhatsApp Congestion Alert</li>
+                        <li>🚑 Emergency Email Notification</li>
+                        <li>🚨 Emergency WhatsApp Alert</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="work-step">
+                <img src="assets/telegram.jpg">
+                <div>
+                    <h3>8. Remote Control via Telegram</h3>
+                    <p>
+                        User can manually control lanes, servos, and signals.
+                        Supports AUTO mode, MANUAL override, and emergency control.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="featureModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody" class="modal-body"></div>
+        </div>
+    </div>
+
+    <div id="techModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTech()">&times;</span>
+            <h2 id="techTitle"></h2>
+            <div id="techBody"></div>
+        </div>
+    </div>
+
+    <div class="scroll-buttons">
+        <button id="scrollUp">⬆</button>
+        <button id="scrollDown">⬇</button>
+    </div>
+
+    <div id="imgModal" class="img-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Smart Traffic Management System</p>
+        <p>Developed by <span>Madan R</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
